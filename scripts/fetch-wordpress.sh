@@ -14,9 +14,11 @@ diff current latest
 if [ $? -eq 0 ]; then
     rm latest
     rm latest-http.tar.gz
+    exit 1
 else
     mv -f latest current
     rm -r word-press-master
     tar -xzf latest-http.tar.gz
     mv -f latest-http.tar.gz current-http.tar.gz
+    exit 0
 fi
