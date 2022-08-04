@@ -8,5 +8,7 @@ ls ./word-press-master/data/backnumber/**/*.toml | ./scripts/backnumber/make_lin
 printf "\n"
 cat ./scripts/backnumber/footer.tpl.gmi
 printf "\n"
+echo "=> ./index.gmi トップページへ戻る"
+printf "\n"
 echo "最終更新日時: $(date)"
 printf "\n"
